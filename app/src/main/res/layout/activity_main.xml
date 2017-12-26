@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:elevation="24dp"
+        android:gravity="end"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <EditText
+            android:id="@+id/barcode"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.5"
+            android:background="#50acf2"
+            android:gravity="center"
+            android:hint="Barcode"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColor="#000" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/show"
+            android:layout_weight="0.5"
+            android:background="#FFDC71"
+            android:text="Show"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="10dp"
+            android:background="@drawable/square"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="#d6b1b1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/square"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_large_font"
+                android:layout_width="0dp"
+                android:layout_weight=".6"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:gravity="left|center"
+                android:text="Group :"
+
+
+                />
+
+            <TextView
+                android:id="@+id/group"
+                style="@style/style_large_font"
+                android:layout_width="0dp"
+                android:layout_weight="1.4"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center|left"
+                android:textSize="14sp"
+                android:textStyle="bold"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_large_font"
+                android:layout_width="0dp"
+                android:layout_weight=".6"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:gravity="left|center"
+                android:text="Department :"
+
+
+                />
+
+            <TextView
+                android:id="@+id/dept"
+                style="@style/style_large_font"
+                android:layout_width="0dp"
+                android:layout_weight="1.4"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center|left"
+                android:textSize="14sp"
+                android:textStyle="bold"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:weightSum="2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_large_font"
+                android:layout_width="0dp"
+                android:layout_weight=".6"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:gravity="left|center"
+                android:text="Location : "
+
+
+                />
+
+            <TextView
+                android:id="@+id/location"
+                style="@style/style_large_font"
+                android:layout_width="0dp"
+                android:layout_weight="1.4"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center|left"
+                android:textSize="14sp"
+                android:textStyle="bold"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_large_font"
+                android:layout_width="0dp"
+                android:layout_weight=".6"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:gravity="left|center"
+                android:text="Asset Name :"
+
+
+                />
+
+            <TextView
+                android:id="@+id/assetname"
+                style="@style/style_large_font"
+                android:layout_width="0dp"
+                android:layout_weight="1.4"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center|left"
+                android:textSize="14sp"
+                android:textStyle="bold"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:weightSum="2"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_large_font"
+                android:layout_width="0dp"
+                android:layout_weight=".6"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:gravity="left|center"
+                android:text="Serial No :"
+
+                />
+
+            <TextView
+                android:id="@+id/serialno"
+                style="@style/style_large_font"
+                android:layout_width="0dp"
+                android:layout_weight="1.4"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center|left"
+                android:textSize="14sp"
+                android:textStyle="bold"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button"
+            android:text="RESET"
+            android:id="@+id/reset"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>
